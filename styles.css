@@ -1,0 +1,49 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del banner lateral */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ancho del banner */
+    height: 100%;
+    background-color: #333; /* Color de fondo del banner */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Estilos del contenido principal */
+.content {
+    margin-left: 220px; /* Ancho del banner + espacio de separación */
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
