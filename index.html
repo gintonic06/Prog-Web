@@ -3,23 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner Lateral</title>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" $navbar-dark-color>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Please.png" alt="VizABio" width="75" height="50"></a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active fuente1" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuente1" href="#">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled fuente1" aria-disabled="true">Proyecto</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Log in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <link rel="stylesheet" href="estilo_proyecto.css"> <!-- Enlaza tu archivo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="banner">
-        <div class="logo">
-            <img src="Please.png" alt="Logo"> <!-- Inserta la ruta de tu logo -->
+    <div class="container text-center container-sm container-md">
+        <div class="col-12 barraP fw-semibold">
+            ¿Como viene mi proyecto?
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 15%"></div>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <!-- Aquí va el contenido principal de tu página -->
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="fw-bold fs-1">Idea principal</div>
+                <div> Por el momento, la idea sería que uno pueda aplicar filtros a las señales de una base de datos. <br> Todavía no se que herramientas vamos a tener al final del cuatri, así que puede llegar a cambiar en cualquier momento. <br>Capaz ua versión simple puede ser un visualizador de filtros sin ninguna base de datos.</div>
+            </div>
+            <div class="col-sm-5 logo-grid">
+                <div class="fw-bold fs-2">Ejemplo</div>
+                <img src="ejemplo.png" alt="ejemplo" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Don't press the red button 
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img id="image" src="meme.jpg" alt="image" />
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label fs-5">Acá podría poner para ingresar archivos</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+            </div>
+        </div>        
     </div>
 </body>
+<footer>
+        <div class="container-fluid fixed-bottom text-center bg-dark text-light fondo"> Hecho por: Sanchez Camila </div>
+</footer>
 </html>

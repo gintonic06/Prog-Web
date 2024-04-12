@@ -1,49 +1,44 @@
 /* Estilos generales */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+.barraP {
+    margin: 3px;
+    padding: 3px;
 
-/* Estilos del banner lateral */
-.banner {
+}
+.fondo{
+    margin: 0px;
+    padding: 10px;
+    font-size: 12px;
+}
+.fuente1 {
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+img{
+    object-fit: contain;
+}
+#image{
+    width: 100%;
+}
+.logo-grid img {
+    width: 100%;
+  }
+/* Estilos del botón de inicio de sesión */
+.boton-login {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px; /* Ancho del banner */
-    height: 100%;
-    background-color: #333; /* Color de fondo del banner */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.logo img {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-}
-
-.menu li {
-    margin-bottom: 10px;
-}
-
-.menu li a {
-    color: #fff;
+    left: 38px;
+    bottom: 8px;
+    text-align: center;
+    background-color: #c7f2a7; /* Color de fondo del botón */
+    color: #000000; /* Color del texto del botón */
+    padding: 5px 10px; /* Espaciado interno del botón */
     text-decoration: none;
-    font-size: 16px;
+    border-radius: 10px; /* Ajusta los radios de las esquinas superiores */
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
 }
 
-/* Estilos del contenido principal */
-.content {
-    margin-left: 220px; /* Ancho del banner + espacio de separación */
-    padding: 20px;
-}
-
-.logo img {
-    max-width: 100%;
-    height: auto;
+.boton-login:hover {
+    background-color: #119da4; /* Color de fondo del botón al pasar el ratón */
 }
