@@ -4,41 +4,216 @@
     padding: 3px;
 
 }
-.fondo{
-    margin: 0px;
-    padding: 10px;
+body{
+    background-color: rgb(250, 250, 255);
+}
+.info{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding: 8px 20px;
+}
+.barra{
+    background-color: rgb(238,240,242);
+}
+.barra2{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
+.barra2 img{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.barra2 button{
+    border: none;
+}
+.carrito{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.icono-carrito:hover{
+    cursor: pointer;
+}
+.cont-prod{
+    position: absolute;
+    top: 75%;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#contador-prod{
     font-size: 12px;
 }
-.fuente1 {
-    font-family: "Signika Negative", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
+.productos-carrito{
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    background-color: white;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 10px 20px grey;
+    border-radius: 10px;
+}
+.producto-carrito{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.info-producto-carrito{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+    
+}
+.titulo-producto-carrito{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0%;
+}
+.cantidad-producto-carrito{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
     font-style: normal;
 }
-img{
-    object-fit: contain;
+.precio-producto-carrito{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
 }
-#image{
-    width: 100%;
+.total-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    gap: 10%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
 }
-.logo-grid img {
-    width: 100%;
+.total-pagar {
+    margin-bottom: 8px;
+}
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+.icon-close:hover{
+    stroke: grey;
+    cursor: pointer;
+}
+.carrito-oculto{
+    display: none;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-/* Estilos del botón de inicio de sesión */
-.boton-login {
-    position: fixed;
-    left: 38px;
-    bottom: 8px;
+.container {
+    position: relative;
     text-align: center;
-    background-color: #c7f2a7; /* Color de fondo del botón */
-    color: #000000; /* Color del texto del botón */
-    padding: 5px 10px; /* Espaciado interno del botón */
-    text-decoration: none;
-    border-radius: 10px; /* Ajusta los radios de las esquinas superiores */
-    font-size: 15px;
-    font-family: Verdana, sans-serif;
+    color: white;
+    width: 85%;
 }
-
-.boton-login:hover {
-    background-color: #119da4; /* Color de fondo del botón al pasar el ratón */
+.NuevaT{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xxx-large;
+    color:antiquewhite;
+    text-shadow: 2px 2px 8px grey ;
+}
+.trending{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    width: 85%;
+}
+.trend{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    text-align: start;
+}
+@media only screen and (max-width: 545px) {
+    .trend{
+        font-size: 85px;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .trend{
+        font-size: 55px;
+    }
+  }
+.ropa{
+    height: 500px;
+    width: 50%;
+    margin: 10px;
+ }
+.titulo-producto{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+.info-prodcuto{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+footer{
+    margin-top: 5%;
+}
+.producto:hover{
+    box-shadow: 0 10px 20px black;
+}
+.producto img{
+    transition: all .5s;
+}
+.producto:hover img{
+    transform: scale(1.2);
+}
+.card figure{
+    overflow: hidden;
+}
+.producto{
+    margin-top: 5%;
+}
+.producto button{
+    border: none;
+    background: black;
+    color: azure;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 3%;
+    width: 100%;
 }
