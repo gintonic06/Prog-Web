@@ -49,7 +49,7 @@ FilaProducto.addEventListener('click', e => {
         const titulo  = Producto.querySelector('p').textContent;
 
         todosProductos = todosProductos.filter(
-            Producto => Producto.Tituloitulo !== titulo
+            Producto => Producto.Titulo !== titulo
         );
         showHTML();
     }
